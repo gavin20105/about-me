@@ -31,7 +31,12 @@
       const heading = document.querySelector("h1");
 
       button.addEventListener("click", function () {
-        heading.style.color = "navy";
+        // Toggle between navy and crimson each click
+        if (heading.style.color === "navy") {
+          heading.style.color = "crimson";
+        } else {
+          heading.style.color = "navy";
+        }
       });
 
       // 1. An array of facts (placeholders — swap in your real ones!)
